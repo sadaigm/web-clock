@@ -61,7 +61,7 @@ const ClockList: React.FC<ClockProps> = () => {
                 timeZone="Europe/London"
             /> */}
       {selectedlist.map((t, index) => (
-        <ClockWrapper key={t} size={index} timeZone={t} />
+        <ClockWrapper key={t} size={ClockSize.lg} timeZone={t} />
       ))}
 
       {/* <ClockWrapper /> */}
