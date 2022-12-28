@@ -54,12 +54,12 @@ const Hand: React.FC<HandProps> = ({ hand, rotationDeg, id }) => {
   } else if (hand === Hands.Second) {
     const backgroundColor = `${secondHandConfig.bgColor}`;
     const transform = `translateX(-50%) rotate(${rotationDeg.secondDeg}deg)`;
-    let bg = "rgba(165, 42, 42, 0.9)";
-    if (id && id < rotationDeg.secondDeg) {
-      bg = "rgba(165, 42, 42, 0.7)";
-    } else if (id && id === rotationDeg.secondDeg) {
-      bg = "rgba(165, 42, 42, 0.9)";
-    }
+    // let bg = "rgba(165, 42, 42, 0.9)";
+    // if (id && id < rotationDeg.secondDeg) {
+    //   bg = "rgba(165, 42, 42, 0.7)";
+    // } else if (id && id === rotationDeg.secondDeg) {
+    //   bg = "rgba(165, 42, 42, 0.9)";
+    // }
     handStyle = {
       ...handStyle,
       ...secondHandConfig,
