@@ -80,6 +80,10 @@ const defaultProviderType = {
   minutes: 0,
   setHours: () => {},
   setMinutes: () => {},
+  dateValue: {},
+  setDateValue: () => {},
+  calenderView: false,
+  setcalenderView: () => {},
 };
 export const ClockContext =
   React.createContext<ClockProviderType>(defaultProviderType);
@@ -92,6 +96,10 @@ type ClockProviderType = {
   setHours: Dispatch<SetStateAction<number>>;
   minutes: number;
   setMinutes: Dispatch<SetStateAction<number>>;
+  dateValue: any;
+  setDateValue: Dispatch<SetStateAction<any>>;
+  calenderView: boolean;
+  setcalenderView: Dispatch<SetStateAction<boolean>>;
 };
 
 const ClockProvider: React.FunctionComponent<ClockContextType> = ({
@@ -99,11 +107,13 @@ const ClockProvider: React.FunctionComponent<ClockContextType> = ({
   children,
   timeZone,
 }) => {
+  const [calenderView, setcalenderView] = React.useState(false);
   const [timeZoneVal] = React.useState(getTimeZone(timeZone));
   const data = getHandDegree(new Date(), timeZoneVal);
   const [hours, setHours] = React.useState<number>(data.hours);
   const [minutes, setMinutes] = React.useState<number>(data.minutes);
   const [dark, setDark] = React.useState(false);
+  const [dateValue, setDateValue] = React.useState({});
   const [clockConfig, setclockConfig] =
     React.useState<ClockConfigType>(defaultClockConfig);
   React.useEffect(() => {
@@ -294,20 +304,24 @@ const ClockProvider: React.FunctionComponent<ClockContextType> = ({
           setHours,
           minutes,
           setMinutes,
+          dateValue,
+          setDateValue,
+          calenderView,
+          setcalenderView,
         }}
       >
         {children}
       </ClockContext.Provider>
     );
   }, [
-    children,
+    timeZoneVal,
     clockConfig,
     dark,
-    minutes,
-    setMinutes,
     hours,
-    setHours,
-    timeZoneVal,
+    minutes,
+    dateValue,
+    calenderView,
+    children,
   ]);
 
   return <>{renderProvider} </>;

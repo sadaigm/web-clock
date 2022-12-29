@@ -3,6 +3,7 @@ import { ClockContext } from "./ClockProvider";
 import { getBG } from "./clockutils";
 import Number from "./Number";
 import RenderHands from "./RenderHands";
+import "./clock.css";
 
 export const clockStyle = {
   width: "400px",
@@ -116,6 +117,7 @@ const Clock = () => {
         justifyContent: "flex-start",
         alignItems: "center",
         height: "100%",
+        width: "100%",
         // border: "1px solid grey",
 
         flexDirection: "column-reverse",
@@ -125,12 +127,13 @@ const Clock = () => {
         style={{
           display: "flex",
           width: "100%",
-          border: "1px solid cornflowerblue",
+          height: "75px",
+          borderTop: "1px solid cornflowerblue",
           justifyContent: "center",
           color: "cornflowerblue",
         }}
       >
-        <h3>{timeZone}</h3>
+        <h2>{timeZone}</h2>
       </div>
       <div
         style={{

@@ -1,7 +1,9 @@
 import React from "react";
-import Clock from "./Clock";
+// import Clock from "./Clock";
+import ClockContainer from "./ClockContainer";
 import ClockProvider, { ClockSize } from "./ClockProvider";
 import { selectedlist } from "./timezone";
+import ToggleButton from "./ToggleButton";
 type ClockProps = {
   size?: ClockSize;
   timeZone?: string;
@@ -10,6 +12,7 @@ type ClockProps = {
 export const ClockWrapper: React.FC<ClockProps> = ({ size, timeZone }) => {
   return (
     <div
+      key={timeZone}
       style={{
         display: "flex",
         justifyContent: "center",
@@ -21,7 +24,15 @@ export const ClockWrapper: React.FC<ClockProps> = ({ size, timeZone }) => {
         size={size !== undefined ? size : ClockSize.lg}
         timeZone={timeZone}
       >
-        <Clock />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <ClockContainer key={timeZone} />
+          <ToggleButton />
+        </div>
       </ClockProvider>
     </div>
   );

@@ -9,15 +9,17 @@ type RenderHandsProps = {
 };
 const RenderHands: React.FC<RenderHandsProps> = ({ hands }) => {
   const [HandDeg, setHandDeg] = useState<any>({});
-  const { timeZone, hours, setHours, minutes, setMinutes } =
+  const { timeZone, hours, setHours, minutes, setMinutes, setDateValue } =
     React.useContext(ClockContext);
 
   React.useEffect(() => {
     const setClock = () => {
       let time = new Date();
       const result = getHandDegree(time, timeZone);
-      const { secondDeg, minuteDeg, hoursDeg } = result;
+      const { secondDeg, minuteDeg, hoursDeg, today, month, fullYear, day } =
+        result;
       // console.log({ timeZone, secondDeg, minuteDeg, hoursDeg, hours })
+      setDateValue({ today, month, fullYear, day });
       result.hours !== hours && setHours((p) => result.hours);
       result.minutes !== minutes && setMinutes((p) => result.minutes);
       setHandDeg({ secondDeg, minuteDeg, hoursDeg });
@@ -27,7 +29,15 @@ const RenderHands: React.FC<RenderHandsProps> = ({ hands }) => {
     return () => {
       clearInterval(interval);
     };
-  }, [setHandDeg, timeZone, setHours, hours, minutes, setMinutes]);
+  }, [
+    setHandDeg,
+    timeZone,
+    setHours,
+    hours,
+    minutes,
+    setMinutes,
+    setDateValue,
+  ]);
 
   const renderHands = React.useMemo(() => {
     return hands.map((hand, index) => {
