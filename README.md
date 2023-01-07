@@ -1,3 +1,20 @@
+## World Web Clock App
+App allows user to add clock around the world by choosing the timezone values. it remembers the clock chosen by the user & show the clock.
+Calender section show the Current Date, Day, month & year for the selected timezone. In small device Calender button helps the use to toggle between calender & clock.
+
+## Responsive
+- This app is responsive supports Large & Small Device.
+
+## Demo App
+[World Web Clock](https://sadaigm.github.io/web-clock/)
+
+## More
+[Github Source Code](https://github.com/sadaigm/web-clock)
+[Star Repo](https://github.com/sadaigm/web-clock/stargazers)
+[watch](https://github.com/sadaigm/web-clock/watchers)
+
+## About Project
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
