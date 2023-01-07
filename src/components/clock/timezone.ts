@@ -1,9 +1,9 @@
 
 export const world_timezones = [
+    'Asia/Kolkata',
     'America/Toronto',
     'Europe/London',
     'America/New_York',
-    'Asia/Kolkata',
     'Europe/Andorra',
     'Asia/Dubai',
     'Asia/Kabul',
