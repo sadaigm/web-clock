@@ -1,8 +1,8 @@
 import React from "react";
-import ClockList from "./components/clock/ClockWrapper";
+import Screen from "./components/screenlayout/Screen";
 
 function App() {
-  return <ClockList />;
+  return <Screen />;
 }
 
 export default App;

@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#modal-root {
+  position: relative;
+  z-index: 999;
+}
+.portal_container{
+  background-color: rgb(177 156 156 / 85%);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .form-group{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}

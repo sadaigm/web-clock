@@ -1,0 +1,39 @@
+.btn {
+    background-color: #2196f3;
+    border: 1px solid whitesmoke;
+    padding: 1rem;
+    display: flex;
+    opacity: 80%;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.btn:hover {
+    opacity: 100%;
+    cursor: pointer;
+
+}
+.fab{
+    /* top: 80%;
+    position: fixed;
+    left: 80%; */
+    right: 50px;
+    position: fixed;
+    bottom: 50px;
+}
+.fab .btn{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.btn-danger{
+    background-color: red;
+}
+.clear_btn{
+    padding: 0.4rem;
+    background-color: red;
+
+}
