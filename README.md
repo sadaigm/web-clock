@@ -3,7 +3,7 @@ App allows user to add clock around the world by choosing the timezone values. I
 Calender section show the Current Date, Day, month & year for the selected timezone. In small device Calender button helps the use to toggle between calender & clock.
 
 ## Responsive
-- This app is responsive supports Large & Small Device.
+- This app is responsive supports large & small device.
 
 ## Demo App
 [World Web Clock](https://sadaigm.github.io/web-clock/)
