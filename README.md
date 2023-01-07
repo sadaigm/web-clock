@@ -1,5 +1,5 @@
 ## World Web Clock App
-App allows user to add clock around the world by choosing the timezone values. it remembers the clock chosen by the user & show the clock.
+App allows user to add clock around the world by choosing the timezone values. It remembers the clock chosen by the user & show the clock.
 Calender section show the Current Date, Day, month & year for the selected timezone. In small device Calender button helps the use to toggle between calender & clock.
 
 ## Responsive
