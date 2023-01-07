@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "../grid/Grid";
-import { NewDialog } from "../modal/NewModal";
+import NewModal from "../modal/NewModal";
 // import AddButton from "./components/AddButton";
 import Fab from "./components/Fab";
 import { CenterContainer } from "./components/StyledComponents";
@@ -13,7 +13,7 @@ function Screen() {
         <h1>World Web Clock</h1>
       </CenterContainer>
       <ScreenProvider>
-        <NewDialog />
+        <NewModal />
         <Grid />
         <Fab add />
       </ScreenProvider>
