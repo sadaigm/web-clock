@@ -10,7 +10,6 @@ const ClockContainer: React.FC = () => {
   if (smallScreen) {
     showClockCss = !calenderView ? "flex" : "none";
   }
-  console.log(window, parseInt(clockConfig.width) * 2, showClockCss);
   const totalWidth = !smallScreen
     ? `${clockConfig.width} * 2 + 30px`
     : `${clockConfig.width} + 15px`;
@@ -41,7 +40,6 @@ const ClockContainer: React.FC = () => {
   //             //   color: "white",
   //             // }}
   //             onClick={() => {
-  //               console.log("clicked");
   //               //   setcalenderView((p) => !!!p);
   //             }}
   //           >

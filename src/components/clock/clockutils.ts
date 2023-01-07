@@ -6,7 +6,6 @@ export const getBGindex = (index: number) => {
 
 export const getBG = (index: number) => {
     const bgIndex = getBGindex(index);
-    console.log(bgIndex);
     return bgs[bgIndex];
 }
 

@@ -18,7 +18,6 @@ const RenderHands: React.FC<RenderHandsProps> = ({ hands }) => {
       const result = getHandDegree(time, timeZone);
       const { secondDeg, minuteDeg, hoursDeg, today, month, fullYear, day } =
         result;
-      // console.log({ timeZone, secondDeg, minuteDeg, hoursDeg, hours })
       setDateValue({ today, month, fullYear, day });
       result.hours !== hours && setHours((p) => result.hours);
       result.minutes !== minutes && setMinutes((p) => result.minutes);

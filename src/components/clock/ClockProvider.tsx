@@ -117,7 +117,6 @@ const ClockProvider: React.FunctionComponent<ClockContextType> = ({
   const [clockConfig, setclockConfig] =
     React.useState<ClockConfigType>(defaultClockConfig);
   React.useEffect(() => {
-    console.log({ defaultClockConfig });
     let config: ClockConfigType = {
       ...defaultClockConfig,
     } as ClockConfigType;
@@ -242,16 +241,12 @@ const ClockProvider: React.FunctionComponent<ClockContextType> = ({
         },
       };
     }
-    console.log({ config });
     setclockConfig((p) => {
       return { ...p, ...config };
     });
   }, [size]);
 
-  console.log("rendering", timeZoneVal, dark);
-
   React.useEffect(() => {
-    console.log({ hours });
     if ((-1 < hours && hours < 6) || (24 > hours && hours >= 18)) {
       // night mode
       setDark(() => true);

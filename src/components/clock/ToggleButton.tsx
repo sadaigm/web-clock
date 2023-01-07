@@ -32,7 +32,6 @@ const ToggleButton: React.FC = () => {
               color: "white",
             }}
             onClick={(e) => {
-              console.log("clicked");
               setcalenderView((p) => !!!p);
             }}
           >
