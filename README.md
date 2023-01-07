@@ -13,6 +13,11 @@ Calender section show the Current Date, Day, month & year for the selected timez
 - [Star Repo](https://github.com/sadaigm/web-clock/stargazers)
 - [watch](https://github.com/sadaigm/web-clock/watchers)
 
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/2885918/211131764-812bcd82-aa1a-4283-a4ba-1dc93e07b756.png)
+
+
 ## About Project
 
 # Getting Started with Create React App
