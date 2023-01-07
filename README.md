@@ -9,9 +9,9 @@ Calender section show the Current Date, Day, month & year for the selected timez
 [World Web Clock](https://sadaigm.github.io/web-clock/)
 
 ## More
-[Github Source Code](https://github.com/sadaigm/web-clock)
-[Star Repo](https://github.com/sadaigm/web-clock/stargazers)
-[watch](https://github.com/sadaigm/web-clock/watchers)
+- [Github Source Code](https://github.com/sadaigm/web-clock)
+- [Star Repo](https://github.com/sadaigm/web-clock/stargazers)
+- [watch](https://github.com/sadaigm/web-clock/watchers)
 
 ## About Project
 
