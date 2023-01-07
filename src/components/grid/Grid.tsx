@@ -7,7 +7,7 @@ import { device } from "./device";
 import { screenSize } from "../grid/device";
 import "./grid.css";
 
-const smallScreen = screenSize.laptop > window.innerWidth;
+const smallScreen = screenSize.laptopL > window.innerWidth;
 
 export const StyledGrid = styled.div`
   display: flex;
