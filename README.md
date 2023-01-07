@@ -15,7 +15,7 @@ Calender section show the Current Date, Day, month & year for the selected timez
 
 ## Screenshots
 
-![image](https://user-images.githubusercontent.com/2885918/211131764-812bcd82-aa1a-4283-a4ba-1dc93e07b756.png)
+![image](screenshots/WordWebClock.png)
 
 
 ## About Project
