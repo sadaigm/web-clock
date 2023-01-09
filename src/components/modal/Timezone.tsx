@@ -2,6 +2,7 @@ import { faXmarkCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { world_timezones } from "../clock/timezone";
+import { screenSize } from "../grid/device";
 import {
   SelectedValue,
   CustomAutoComplete,
@@ -20,6 +21,7 @@ const Timezone: React.FC<TimezoneProps> = ({
   selectedValue,
   setSelectedValue,
 }) => {
+  const smallScreen = window.innerWidth < screenSize.laptop;
   const [filteredTimeZones, setFilteredTimeZones] =
     React.useState(world_timezones);
   const [inputValue, setinputValue] = React.useState("");
@@ -56,7 +58,12 @@ const Timezone: React.FC<TimezoneProps> = ({
 
   return (
     <>
-      <div className="form-group">
+      <div
+        style={{
+          width: `${smallScreen ? "300px" : "450px"}`,
+        }}
+        className="form-group"
+      >
         <label htmlFor="">Select Timezone :</label>
         <SelectedValue>{selectedValue}</SelectedValue>
         <SizedBox height="10px" />
@@ -75,7 +82,7 @@ const Timezone: React.FC<TimezoneProps> = ({
           <span
             style={{
               marginLeft: "-30px",
-              cursor: `${inputValue.length > 0} ? "pointer": 'none'`,
+              cursor: `${inputValue.length > 0 ? "pointer" : "none"} `,
             }}
           >
             <FontAwesomeIcon
