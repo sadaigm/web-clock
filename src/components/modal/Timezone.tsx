@@ -21,7 +21,12 @@ const Timezone: React.FC<TimezoneProps> = ({
   selectedValue,
   setSelectedValue,
 }) => {
-  const smallScreen = window.innerWidth < screenSize.laptop;
+  const smallScreen = window.innerWidth < screenSize.mobileM;
+  console.log(window.innerWidth, screenSize.mobileM);
+
+  const medium =
+    window.innerWidth > screenSize.mobileS &&
+    window.innerWidth < screenSize.laptop;
   const [filteredTimeZones, setFilteredTimeZones] =
     React.useState(world_timezones);
   const [inputValue, setinputValue] = React.useState("");
@@ -60,7 +65,7 @@ const Timezone: React.FC<TimezoneProps> = ({
     <>
       <div
         style={{
-          width: `${smallScreen ? "300px" : "450px"}`,
+          width: `${smallScreen ? "275px" : medium ? "300px" : "450px"}`,
         }}
         className="form-group"
       >
