@@ -41,7 +41,7 @@ type HandType = {
 };
 const DAY_BG = "#f3cec2";
 const NIGHT_BG = "#242424";
-const DAY_HAND_COLOR = "rgba(165, 42, 42)";
+const DAY_HAND_COLOR = "rgba(51, 53, 54)";
 const NIGHT_HAND_COLOR = "rgb(206 197 197)";
 const DAY_SECOND_HAND_COLOR = "rgb(3, 169, 244)";
 const NIGHT_SECOND_HAND_COLOR = "rgb(214, 51, 132)";

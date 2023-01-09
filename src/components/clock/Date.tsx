@@ -23,7 +23,7 @@ function DateSection() {
             flex: "2",
             justifyContent: "center",
             alignItems: "center",
-            borderTop: "1px solid cornflowerblue",
+            borderTop: "1px solid #9e9e9e",
           }}
         >
           <span
@@ -36,7 +36,7 @@ function DateSection() {
           style={{
             display: "flex",
             height: "75px",
-            borderTop: "1px solid cornflowerblue",
+            borderTop: "1px solid #9e9e9e",
             justifyContent: "center",
             alignItems: "center",
           }}

@@ -128,7 +128,7 @@ const Clock = () => {
           display: "flex",
           width: "100%",
           height: "75px",
-          borderTop: "1px solid cornflowerblue",
+          borderTop: "1px solid #9e9e9e",
           justifyContent: "center",
           color: "cornflowerblue",
         }}

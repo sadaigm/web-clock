@@ -49,6 +49,42 @@ export const CardAction = styled(ContainerDiv)<CustomStyleProps>`
     props.fontSize ? `${props.fontSize * 0.6}px` : "15px"};
   border: none;
 `;
+export const CustomMenu = styled.div`
+  height: 200px;
+  display: flex;
+  overflow-y: auto;
+`;
+export const CustomMenuList = styled.ul`
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+`;
+
+export const CustomMenuListItem = styled.li`
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #9e938652;
+  cursor: pointer;
+  margin: 2px;
+`;
+export const CustomMenuListItemActive = styled(CustomMenuListItem)`
+  background-color: antiquewhite;
+  font-weight: bold;
+  color: chocolate;
+`;
+export const SelectedValue = styled.span`
+  font-weight: bold;
+  color: chocolate;
+  font-size: medium;
+`;
+export const CustomAutoComplete = styled.input`
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid burlywood;
+  width: calc(100% - 15px);
+`;
 export const CustomSelect = styled.select`
   padding: 5px;
   border-radius: 5px;

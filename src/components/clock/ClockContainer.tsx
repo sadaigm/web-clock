@@ -53,7 +53,7 @@ const ClockContainer: React.FC = () => {
     <div
       style={{
         display: "flex",
-        border: "1px solid cornflowerblue",
+        border: "1px solid #9e9e9e",
         color: "cornflowerblue",
         height: `calc(${clockConfig.height} + 85px)`,
         width: `calc(${totalWidth})`,
@@ -65,7 +65,7 @@ const ClockContainer: React.FC = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            borderRight: smallScreen ? `none` : `1px solid cornflowerblue`,
+            borderRight: smallScreen ? `none` : `1px solid #9e9e9e`,
             width: `calc(${clockConfig.width} + 15px)`,
             height: `100%`,
           }}
