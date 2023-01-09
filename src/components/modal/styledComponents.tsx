@@ -78,6 +78,8 @@ export const SelectedValue = styled.span`
   font-weight: bold;
   color: chocolate;
   font-size: medium;
+  display: flex;
+  justify-content: flex-end;
 `;
 export const CustomAutoComplete = styled.input`
   padding: 5px;

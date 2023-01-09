@@ -133,7 +133,7 @@ const Clock = () => {
           color: "cornflowerblue",
         }}
       >
-        <h2>{timeZone}</h2>
+        <h3 title={`${timeZone}`}>{timeZone}</h3>
       </div>
       <div
         style={{

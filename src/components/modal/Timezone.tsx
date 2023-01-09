@@ -57,9 +57,8 @@ const Timezone: React.FC<TimezoneProps> = ({
   return (
     <>
       <div className="form-group">
-        <label htmlFor="">
-          Select Timezone : <SelectedValue>{selectedValue}</SelectedValue>
-        </label>
+        <label htmlFor="">Select Timezone :</label>
+        <SelectedValue>{selectedValue}</SelectedValue>
         <SizedBox height="10px" />
         <div
           style={{
