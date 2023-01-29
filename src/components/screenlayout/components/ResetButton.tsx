@@ -6,7 +6,11 @@ import { ScreenContext } from "../ScreenProvider";
 const ResetButton: React.FC = () => {
   const { removeAllWidgets } = React.useContext(ScreenContext);
   const handleButtonClick = () => {
-    removeAllWidgets();
+    // eslint-disable-next-line no-restricted-globals
+    const confirmDelete = confirm(
+      "Are you sure you want to delete all widgets ?"
+    );
+    confirmDelete && removeAllWidgets();
   };
   return (
     <Button
@@ -14,6 +18,7 @@ const ResetButton: React.FC = () => {
       icon={faTrash}
       title="Clear All"
       handleButtonClick={handleButtonClick}
+      size="2x"
     />
   );
 };

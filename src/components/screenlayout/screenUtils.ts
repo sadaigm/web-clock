@@ -1,5 +1,7 @@
+import { Widget } from "./widget.types";
+
 export const WEB_CLOCKS = 'web_clocks';
-export const addWidgetEntry = (widget: any,widgets:Array<any>) => {
+export const addWidgetEntry = (widget: Widget,widgets:Array<any>) => {
     if(widgets && Array.isArray(widgets)){
         widgets.push(widget);
     }
@@ -11,7 +13,7 @@ export const addWidgetEntry = (widget: any,widgets:Array<any>) => {
     return widgets;
 }
 
-export const removeWidgetEntry = (widget: any,widgets:Array<any>) => {
+export const removeWidgetEntry = (widget: Widget,widgets:Array<any>) => {
     if(widgets && Array.isArray(widgets)){
         widgets = widgets.filter(w => widget.id !== w.id);
     }

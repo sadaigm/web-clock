@@ -47,7 +47,11 @@ const Grid = () => {
         <StyledGrid>
           {widgets.map((widget) => (
             <Cell key={widget.id}>
-              <ClockWrapper key={widget.id} timeZone={widget.timezone} />
+              <ClockWrapper
+                widget={widget}
+                key={widget.id}
+                timeZone={widget.timezone}
+              />
             </Cell>
           ))}
         </StyledGrid>

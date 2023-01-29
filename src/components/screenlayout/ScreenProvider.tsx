@@ -5,12 +5,13 @@ import {
   removeWidgetEntry,
   removeWidgets,
 } from "./screenUtils";
+import { Widget } from "./widget.types";
 
 export type ScreenContextType = {
-  widgets: Array<any>;
-  setWidgets: Dispatch<SetStateAction<any>>;
-  addWidget: (widget: any) => void;
-  removeWidget: (widget: any) => void;
+  widgets: Array<Widget>;
+  setWidgets: Dispatch<SetStateAction<Array<Widget>>>;
+  addWidget: (widget: Widget) => void;
+  removeWidget: (widget: Widget) => void;
   removeAllWidgets: () => void;
   closeModal: boolean;
   setCloseModal: Dispatch<SetStateAction<boolean>>;
@@ -33,14 +34,14 @@ export type ScreenProviderType = {
 };
 
 const ScreenProvider: React.FC<ScreenProviderType> = ({ children }) => {
-  const [widgets, setWidgets] = React.useState<any>(getWidgets());
+  const [widgets, setWidgets] = React.useState<Array<Widget>>(getWidgets());
   const [closeModal, setCloseModal] = React.useState<boolean>(true);
-  const addWidget = (widget: any) => {
+  const addWidget = (widget: Widget) => {
     const newWidgets = addWidgetEntry(widget, widgets);
     setWidgets([...newWidgets]);
   };
 
-  const removeWidget = (widget: any) => {
+  const removeWidget = (widget: Widget) => {
     const newWidgets = removeWidgetEntry(widget, widgets);
     setWidgets([...newWidgets]);
   };

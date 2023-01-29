@@ -53,7 +53,7 @@ const ClockContainer: React.FC = () => {
     <div
       style={{
         display: "flex",
-        border: "1px solid #9e9e9e",
+        borderRadius: "15px",
         color: "cornflowerblue",
         height: `calc(${clockConfig.height} + 85px)`,
         width: `calc(${totalWidth})`,

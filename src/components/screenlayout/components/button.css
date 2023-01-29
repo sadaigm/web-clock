@@ -37,3 +37,10 @@
     background-color: red;
 
 }
+
+.trash_btn{
+    background-color: red;
+    font-size: small;
+    border-radius: 50%;
+    padding: 0.3em;
+}

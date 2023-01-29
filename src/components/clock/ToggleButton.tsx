@@ -12,9 +12,7 @@ const ToggleButton: React.FC = () => {
           style={{
             display: "flex",
             height: "50px",
-            borderBottom: "1px solid #9e9e9e",
-            borderLeft: "1px solid #9e9e9e",
-            borderRight: "1px solid #9e9e9e",
+            borderTop: "1px solid #9e9e9e",
             justifyContent: "center",
             color: "cornflowerblue",
             alignItems: "center",
